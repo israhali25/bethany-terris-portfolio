@@ -61,15 +61,15 @@ export default function ExperiencesPage() {
             <Navbar />
             
             {/* Header Section */}
-            <div className="w-full px-[12%] py-1 pt-20">
-                <Link to="/" className="inline-flex items-center gap-2 text-xxs mb-4 text-gray-600 dark:text-gray-300 hover:text-[#b820e6] transition-colors">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-full px-[12%] py-2 pt-40">
+                <Link to="/" className="inline-flex items-center gap-2 text-xxs mb-8 text-gray-600 dark:text-gray-300 hover:text-[#b820e6] transition-colors">
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                     Back to Home
                 </Link>
                 
-                <h1 className="text-xxs md:text-xxs font-bold font-Ovo mb-3 bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
+                <h1 className="text-xxs md:text-xxs font-bold font-Ovo mb-6 bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Communication & Outreach
                 </h1>
                 <p className="text-xxs text-gray-600 dark:text-gray-300 max-w-3xl">
@@ -80,40 +80,40 @@ export default function ExperiencesPage() {
 
             {/* Experiences Section */}
             <div className="w-full px-[12%] pb-20">
-                <div className="max-w-5xl mx-auto space-y-3">
+                <div className="max-w-5xl mx-auto space-y-6">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="group border-2 border-gray-200 dark:border-white/20 rounded-xl p-4 md:p-5 hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
+                        <div key={index} className="group border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 md:p-10 hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
                             {/* Header */}
-                            <div className="flex items-start gap-3 mb-3">
+                            <div className="flex items-start gap-6 mb-6">
                                 <div className="text-base">{exp.icon}</div>
                                 <div className="flex-1">
-                                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                                    <div className="flex flex-wrap items-center gap-6 mb-2">
                                         <h2 className="text-xxs md:text-xxs font-bold text-gray-800 dark:text-white">
                                             {exp.title}
                                         </h2>
-                                        <span className="px-4 py-1 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white text-xxs font-medium">
+                                        <span className="px-8 py-2 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white text-xxs font-medium">
                                             {exp.year}
                                         </span>
                                     </div>
-                                    <p className="text-xxs text-[#b820e6] dark:text-[#da7d20] font-medium mb-4">
+                                    <p className="text-xxs text-[#b820e6] dark:text-[#da7d20] font-medium mb-8">
                                         {exp.type}
                                     </p>
                                 </div>
                             </div>
 
                             {/* Description */}
-                            <p className="text-xxs text-gray-700 dark:text-gray-300 mb-3 leading-normal">
+                            <p className="text-xxs text-gray-700 dark:text-gray-300 mb-6 leading-normal">
                                 {exp.description}
                             </p>
 
                             {/* Details */}
-                            <div className="space-y-3">
-                                <h3 className="text-xxs font-semibold text-gray-800 dark:text-white mb-3">
+                            <div className="space-y-6">
+                                <h3 className="text-xxs font-semibold text-gray-800 dark:text-white mb-6">
                                     Key Highlights:
                                 </h3>
                                 <ul className="space-y-2">
                                     {exp.details.map((detail, idx) => (
-                                        <li key={idx} className="flex items-start gap-3 text-xxs text-gray-600 dark:text-gray-300">
+                                        <li key={idx} className="flex items-start gap-6 text-xxs text-gray-600 dark:text-gray-300">
                                             <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] mt-2 flex-shrink-0"></span>
                                             <span>{detail}</span>
                                         </li>
@@ -125,14 +125,14 @@ export default function ExperiencesPage() {
                 </div>
 
                 {/* Call to Action */}
-                <div className="max-w-3xl mx-auto mt-20 text-center p-5 border-2 border-gray-200 dark:border-white/20 rounded-xl bg-gradient-to-br from-gray-50 to-transparent dark:from-darkHover/30 dark:to-transparent">
-                    <h3 className="text-xxs font-bold mb-4 dark:text-white">Interested in collaboration?</h3>
-                    <p className="text-xxs text-gray-600 dark:text-gray-300 mb-3">
+                <div className="max-w-3xl mx-auto mt-20 text-center p-10 border-2 border-gray-200 dark:border-white/20 rounded-2xl bg-gradient-to-br from-gray-50 to-transparent dark:from-darkHover/30 dark:to-transparent">
+                    <h3 className="text-xxs font-bold mb-8 dark:text-white">Interested in collaboration?</h3>
+                    <p className="text-xxs text-gray-600 dark:text-gray-300 mb-6">
                         Always open to discussing research collaborations, speaking opportunities, or consulting projects.
                     </p>
-                    <Link to="/#contact" className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-medium hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <Link to="/#contact" className="inline-flex items-center gap-2 px-8 py-2 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-medium hover:shadow-2xl hover:scale-105 transition-all duration-300">
                         Get in Touch
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                     </Link>

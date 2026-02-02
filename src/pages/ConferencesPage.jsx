@@ -41,9 +41,9 @@ export default function ConferencesPage() {
         <div className="overflow-x-hidden antialiased text-gray-800 dark:bg-darkTheme dark:text-white">
             <Navbar />
             
-            <div className="w-full px-[12%] py-5 mt-4">
-                <h1 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white mb-3">Conferences & Invited Talks</h1>
-                <p className="text-xxs text-gray-700 dark:text-gray-300 mb-3 max-w-3xl">
+            <div className="w-full px-[12%] py-20 mt-8">
+                <h1 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white mb-6">Conferences & Invited Talks</h1>
+                <p className="text-xxs text-gray-700 dark:text-gray-300 mb-6 max-w-3xl">
                     Conference presentations and invited seminars on quantum foundations, measurement theory, and relational quantum mechanics.
                 </p>
 
@@ -51,26 +51,26 @@ export default function ConferencesPage() {
                     {conferences.map((conf, index) => (
                         <div 
                             key={index} 
-                            className="border-2 border-gray-200 dark:border-white/20 rounded-xl p-4 bg-white dark:bg-darkHover hover:shadow-lg transition duration-300"
+                            className="border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 bg-white dark:bg-darkHover hover:shadow-lg transition duration-300"
                         >
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center flex-shrink-0">
-                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-start gap-8 mb-8">
+                                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center flex-shrink-0">
+                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <span className="px-3 py-1 bg-[#b820e6]/10 dark:bg-[#b820e6]/20 text-[#b820e6] dark:text-[#da7d20] rounded-full text-xxs font-medium">
+                                    <div className="flex items-center gap-6 mb-2">
+                                        <span className="px-6 py-2 bg-[#b820e6]/10 dark:bg-[#b820e6]/20 text-[#b820e6] dark:text-[#da7d20] rounded-full text-xxs font-medium">
                                             {conf.role}
                                         </span>
                                         <span className="text-gray-600 dark:text-gray-400">{conf.date}</span>
                                     </div>
                                     <h3 className="text-xxs font-semibold text-gray-900 dark:text-white mb-2">{conf.title}</h3>
-                                    <p className="text-xxs font-medium text-gray-700 dark:text-gray-300 mb-4">{conf.event}</p>
+                                    <p className="text-xxs font-medium text-gray-700 dark:text-gray-300 mb-8">{conf.event}</p>
                                     <p className="text-xxs text-gray-700 dark:text-gray-300 leading-normal">{conf.description}</p>
                                     {conf.slides && (
-                                        <div className="mt-4">
+                                        <div className="mt-8">
                                             <span className="text-[#b820e6] dark:text-[#da7d20] font-medium">Slides: [attach pdf]</span>
                                         </div>
                                     )}

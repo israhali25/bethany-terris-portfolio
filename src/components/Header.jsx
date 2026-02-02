@@ -16,7 +16,7 @@ export default function Header() {
     };
 
     return (
-        <div className="w-11/12 max-w-2xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-3">
+        <div className="w-11/12 max-w-2xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-6">
             <div className="space-y-1">
                 <h1 className="text-xxs sm:text-xxs lg:text-xxs font-bold font-Ovo bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Bethany Terris
@@ -28,7 +28,7 @@ export default function Header() {
                 <p className="text-xxs font-Ovo text-gray-700 dark:text-gray-300 leading-normal">
                     Interdisciplinary researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span> translating theory and experiment into clear, responsible science communication.
                 </p>
-                <div className="flex flex-wrap items-center justify-center gap-3 text-xxs text-gray-600 dark:text-gray-400">
+                <div className="flex flex-wrap items-center justify-center gap-6 text-xxs text-gray-600 dark:text-gray-400">
                     <span className="flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 bg-[#b820e6] rounded-full"></span>
                         Paris, France
@@ -38,7 +38,7 @@ export default function Header() {
 
             <div className="flex flex-col sm:flex-row items-center gap-2 mt-3">
                 <button onClick={handleContactClick}
-                    className="px-3 py-1 text-xxs rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-1.5 font-medium hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
+                    className="px-6 py-2 text-xxs rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-1.5 font-medium hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
                     Get in Touch
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -46,7 +46,7 @@ export default function Header() {
                 </button>
 
                 <a href="./assets/cv_bterris.pdf" download
-                    className="px-3 py-1 text-xxs rounded-full border-2 border-gray-300 dark:border-white/30 hover:border-[#b820e6] dark:hover:border-[#b820e6] flex items-center gap-1.5 bg-white dark:bg-transparent dark:text-white font-medium hover:shadow-xl transition-all duration-300">
+                    className="px-6 py-2 text-xxs rounded-full border-2 border-gray-300 dark:border-white/30 hover:border-[#b820e6] dark:hover:border-[#b820e6] flex items-center gap-1.5 bg-white dark:bg-transparent dark:text-white font-medium hover:shadow-xl transition-all duration-300">
                     Download CV
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
