@@ -49,7 +49,7 @@ export default function VulgarisationPage() {
                                             <span className="font-medium">Hosts:</span> {item.hosts}
                                         </p>
                                     )}
-                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed mb-4">{item.description}</p>
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal mb-4">{item.description}</p>
                                     <a 
                                         href={item.link} 
                                         target="_blank" 

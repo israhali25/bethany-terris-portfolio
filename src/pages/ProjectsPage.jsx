@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                                     </p>
                                     <div className="bg-gray-50 dark:bg-darkTheme p-6 rounded-lg mb-4">
                                         <p className="font-semibold text-gray-900 dark:text-white mb-2">Abstract:</p>
-                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{project.abstract}</p>
+                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">{project.abstract}</p>
                                     </div>
                                 </div>
                             </div>

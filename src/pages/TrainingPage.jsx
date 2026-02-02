@@ -124,7 +124,7 @@ export default function TrainingPage() {
                                             <span>{training.date}</span>
                                         </div>
                                     </div>
-                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">
                                         {training.description}
                                     </p>
                                 </div>
@@ -160,7 +160,7 @@ export default function TrainingPage() {
                                             </svg>
                                             <span>{course.date}</span>
                                         </div>
-                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">
                                             {course.description}
                                         </p>
                                     </div>

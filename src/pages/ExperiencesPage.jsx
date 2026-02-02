@@ -102,7 +102,7 @@ export default function ExperiencesPage() {
                             </div>
 
                             {/* Description */}
-                            <p className="text-xs text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                            <p className="text-xs text-gray-700 dark:text-gray-300 mb-6 leading-normal">
                                 {exp.description}
                             </p>
 

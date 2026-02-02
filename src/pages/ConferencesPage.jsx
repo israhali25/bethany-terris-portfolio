@@ -68,7 +68,7 @@ export default function ConferencesPage() {
                                     </div>
                                     <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{conf.title}</h3>
                                     <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">{conf.event}</p>
-                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{conf.description}</p>
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">{conf.description}</p>
                                     {conf.slides && (
                                         <div className="mt-4">
                                             <span className="text-[#b820e6] dark:text-[#da7d20] font-medium">Slides: [attach pdf]</span>

@@ -81,7 +81,7 @@ export default function Skills() {
                     <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-4 font-Ovo">
                         Interdisciplinary Approach
                     </h3>
-                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">
                         My training in <span className="font-semibold text-[#b820e6]">philosophy of physics</span> provides a unique perspective that bridges theoretical precision with conceptual clarity. This interdisciplinary foundation enables me to navigate complex scientific questions while maintaining rigorous standards of both philosophical analysis and empirical research, making technical quantum concepts accessible without sacrificing intellectual depth.
                     </p>
                 </div>

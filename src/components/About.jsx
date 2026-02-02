@@ -21,15 +21,15 @@ export default function About() {
                 </div>
                 
                 {/* Contenu */}
-                <div className="flex-1 space-y-2 text-xs leading-relaxed font-Ovo text-gray-700 dark:text-gray-300">
+                <div className="flex-1 space-y-2 text-xs leading-normal font-Ovo text-gray-700 dark:text-gray-300">
                     
                     <p>
                         For me, this question has never been straightforward. For years now, I have felt myself split across worlds (a common occupational hazard for anyone who spends too much time with Everett!)
                     </p>
 
                     <div className="my-3 space-y-1.5 pl-3 border-l-4 border-[#b820e6]">
-                        <p className="text-xs font-semibold text-gray-900 dark:text-white">I am a physicist.</p>
-                        <p className="text-xs font-semibold text-gray-900 dark:text-white">I am a philosopher.</p>
+                        <p className="text-xs text-gray-700 dark:text-gray-300">I am a physicist.</p>
+                        <p className="text-xs text-gray-700 dark:text-gray-300">I am a philosopher.</p>
                     </div>
 
                     <p>

@@ -63,7 +63,7 @@ export default function PublicationsPage() {
                                     {pub.abstract && (
                                         <div className="bg-gray-50 dark:bg-darkTheme p-6 rounded-lg my-4">
                                             <p className="font-semibold text-gray-900 dark:text-white mb-2">Abstract:</p>
-                                            <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{pub.abstract}</p>
+                                            <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">{pub.abstract}</p>
                                         </div>
                                     )}
                                     {pub.doi && (

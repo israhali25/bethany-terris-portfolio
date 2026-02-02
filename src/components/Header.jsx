@@ -25,7 +25,7 @@ export default function Header() {
             </div>
 
             <div className="max-w-xl space-y-2">
-                <p className="text-xs font-Ovo text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-xs font-Ovo text-gray-700 dark:text-gray-300 leading-normal">
                     Interdisciplinary researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span> translating theory and experiment into clear, responsible science communication.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-gray-600 dark:text-gray-400">
