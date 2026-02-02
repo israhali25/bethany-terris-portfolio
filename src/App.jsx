@@ -1,7 +1,8 @@
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Work from './components/Work'
-import Services from './components/Services'
+import Skills from './components/Skills'
+import Training from './components/Training'
 import About from './components/About'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
@@ -14,8 +15,9 @@ export default function App() {
             <Navbar />
             <Header />
             <About />
-            <Services />
             <Work />
+            <Skills />
+            <Training />
             <Contact />
             <Footer />
         </>

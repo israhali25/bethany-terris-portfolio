@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 export default function Navbar() {
+    const navigate = useNavigate();
+    const location = useLocation();
     const sideMenuRef = useRef();
     const navRef = useRef();
     const navLinkRef = useRef();
@@ -51,19 +54,20 @@ export default function Navbar() {
 
             <nav ref={navRef} className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
 
-                <a href="#!" className="flex items-center gap-2">
+                <a onClick={() => navigate('/')} className="flex items-center gap-2 cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center text-white font-bold text-sm">
                         BT
                     </div>
-                    <span className="text-xl font-bold font-Ovo dark:text-white">Bethany Terris</span>
+                    <span className="text-2xl font-bold font-Ovo dark:text-white">Bethany Terris</span>
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
-                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
+                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent text-lg">
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/'); else window.location.href = '#top'; }}>Home</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/#about'); else window.location.href = '#about'; }}>About me</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/#work'); else window.location.href = '#work'; }}>My Work</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/#skills'); else window.location.href = '#skills'; }}>Skills</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => navigate('/training')}>Training</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/#contact'); else window.location.href = '#contact'; }}>Contact me</a></li>
                 </ul>
 
                 <div className="flex items-center gap-4">
@@ -72,7 +76,7 @@ export default function Navbar() {
                         <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
-                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+                    <a onClick={() => { if (location.pathname !== '/') navigate('/#contact'); else window.location.href = '#contact'; }} className="hidden lg:flex items-center gap-3 px-10 py-2.5 text-lg border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30 cursor-pointer">
                         Contact
                         <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
                         <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
@@ -92,11 +96,12 @@ export default function Navbar() {
                         <img src="./assets/close-white.png" alt="" className="w-5 cursor-pointer hidden dark:block" />
                     </div>
 
-                    <li><a href="#top" onClick={closeMenu}>Home</a></li>
-                    <li><a href="#about" onClick={closeMenu}>About me</a></li>
-                    <li><a href="#services" onClick={closeMenu}>Services</a></li>
-                    <li><a href="#work" onClick={closeMenu}>My Work</a></li>
-                    <li><a href="#contact" onClick={closeMenu}>Contact me</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); if (location.pathname !== '/') navigate('/'); else window.location.href = '#top'; }}>Home</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); if (location.pathname !== '/') navigate('/#about'); else window.location.href = '#about'; }}>About me</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); if (location.pathname !== '/') navigate('/#work'); else window.location.href = '#work'; }}>My Work</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); if (location.pathname !== '/') navigate('/#skills'); else window.location.href = '#skills'; }}>Skills</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); navigate('/training'); }}>Training</a></li>
+                    <li><a className="cursor-pointer" onClick={() => { closeMenu(); if (location.pathname !== '/') navigate('/#contact'); else window.location.href = '#contact'; }}>Contact me</a></li>
                 </ul>
             </nav>
         </>

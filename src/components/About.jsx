@@ -1,70 +1,70 @@
 export default function About() {
-    const tools = [
-        { name: 'LaTeX', icon: './assets/vscode.png', },
-        { name: 'Python', icon: './assets/firebase.png', },
-        { name: 'Research', icon: './assets/mongodb.png', },
-        { name: 'Analysis', icon: './assets/figma.png', },
-        { name: 'git', icon: './assets/git.png', },
-    ];
-
-    const data = [
-        {
-            name: 'Languages',
-            icon1: './assets/code-icon.png',
-            icon2: './assets/code-icon-dark.png',
-            description: 'English (Native), French (B1)',
-        },
-        {
-            name: 'Education',
-            icon1: './assets/edu-icon.png',
-            icon2: './assets/edu-icon-dark.png',
-            description: 'PhD Philosophy of Physics, University Paris-Saclay',
-        },
-        {
-            name: 'Experience',
-            icon1: './assets/project-icon.png',
-            icon2: './assets/project-icon-dark.png',
-            description: '3+ years PhD Research at CEA-Saclay',
-        },
-    ];
     return (
-        <div id="about" className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-transparent to-gray-50 dark:to-darkTheme/30">
-            <h4 className="text-center mb-2 text-xl font-Ovo text-[#b820e6]">Introduction</h4>
-            <h2 className="text-center text-5xl font-Ovo mb-20">About me</h2>
+        <div id="about" className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-white via-purple-50/20 to-orange-50/20 dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
+            <div className="text-center mb-16">
+                <h4 className="mb-3 text-xl font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Introduction</h4>
+                <h2 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white">Who Am I?</h2>
+                <p className="text-xl text-gray-700 dark:text-gray-300 mt-4 italic">The question we all ask ourselves</p>
+            </div>
 
-            <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-                <div className="max-w-max mx-auto relative">
-                    <div className="w-64 sm:w-80 h-64 sm:h-80 rounded-3xl bg-gradient-to-br from-[#b820e6] via-[#da7d20] to-[#e94560] flex items-center justify-center text-white text-6xl sm:text-8xl font-bold shadow-2xl relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent animate-pulse-slow"></div>
-                        <span className="relative z-10">BT</span>
+            <div className="flex w-full flex-col lg:flex-row items-start gap-16 max-w-7xl mx-auto">
+                {/* Photo sticky */}
+                <div className="w-full lg:w-80 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
+                    <div className="relative">
+                        <img 
+                            src="/assets/profile-pic.jpg?v=2" 
+                            alt="Bethany Terris" 
+                            className="w-full aspect-square rounded-2xl object-cover shadow-2xl"
+                        />
+                        <div className="absolute -inset-4 bg-gradient-to-br from-[#b820e6] via-[#da7d20] to-[#e94560] rounded-2xl blur-2xl opacity-20 -z-10"></div>
                     </div>
                 </div>
-                <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                        Interdisciplinary PhD researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span>, trained in working at the boundary between theory, experiment, and interpretation. Comfortable with detail-oriented, precision-driven work, long review cycles, and applying consistent criteria across complex material. Strong communicator with experience supporting alignment between researchers working across disciplines.
+                
+                {/* Contenu */}
+                <div className="flex-1 space-y-4 text-xl leading-relaxed font-Ovo text-gray-700 dark:text-gray-300">
+                    
+                    <p>
+                        For me, this question has never been straightforward. For years now, I have felt myself split across worlds (a common occupational hazard for anyone who spends too much time with Everett!)
                     </p>
 
-                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-                        {data.map((data) => (
-                            <li key={data.name} className="group border-2 border-gray-200 dark:border-white/20 rounded-xl p-6 cursor-pointer hover:border-[#b820e6] dark:hover:border-[#b820e6] hover:-translate-y-2 duration-300 hover:shadow-xl bg-white dark:bg-darkHover/30">
-                                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-3">
-                                    <img src={data.icon1} alt="" className="w-5 dark:hidden invert" />
-                                    <img src={data.icon2} alt="" className="w-5 hidden dark:block" />
-                                </div>
-                                <h3 className="mb-2 font-semibold text-gray-800 dark:text-white">{data.name}</h3>
-                                <p className="text-gray-600 text-sm dark:text-gray-300">{data.description}</p>
-                            </li>
-                        ))}
-                    </ul>
-                    <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">Skills & Tools</h4>
+                    <div className="my-10 space-y-4 pl-8 border-l-4 border-[#b820e6]">
+                        <p className="text-3xl font-semibold text-gray-900 dark:text-white">I am a physicist.</p>
+                        <p className="text-3xl font-semibold text-gray-900 dark:text-white">I am a philosopher.</p>
+                    </div>
 
-                    <ul className="flex items-center gap-3 sm:gap-5">
-                        {tools.map((tool) => (
-                            <li key={tool.name} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                                <img src={tool.icon} alt={tool.name} className="w-5 sm:w-7" />
-                            </li>
-                        ))}
-                    </ul>
+                    <p>
+                        And for a long time, these identities felt less like complementary perspectives than like parallel branches, each internally coherent, yet stubbornly resistant to collapse into a single story.
+                    </p>
+
+                    <p>
+                        Physics enticed me with technical precision and the promise of explanation. Philosophy pulled me towards the very edges – what counts as reality, what it means to observe, what it takes to know anything at all.
+                    </p>
+
+                    <p>
+                        My PhD in Philosophy of Physics was the collision. Somehow, the worlds met again.
+                    </p>
+
+                    <p className="mt-16">
+                        The thing is, quantum theory is no longer confined to foundational work. It's becoming technology, infrastructure, policy.
+                    </p>
+
+                    <p>
+                        As quantum technologies move from the lab into industry and public discourse, the gap between what the theory actually says and what people think it says is widening fast. Quantum mechanics is powerful, and routinely misunderstood. Sometimes accidentally. Often strategically.
+                    </p>
+
+                    <p>
+                        This is where my interest in science communication comes in. I care about how quantum ideas travel. What gets simplified. What gets distorted. And how vague references to "quantum" are used to sell certainty, authority, or even ideology, without understanding the science underneath.
+                    </p>
+
+                    <p>
+                        I'm interested in quantum technology not just as a scientific achievement, but as a social one. What we build matters. So does how we talk about it. And if we don't take responsibility for that conversation, someone else will – badly.
+                    </p>
+
+                    <div className="mt-16 pt-8 border-t-2 border-gray-200 dark:border-gray-700">
+                        <p className="font-bold">
+                            Now, instead of doing the research, I write about it. On this website, you can find a portfolio of my work, including academic publications, conference talks, blog posts, and popular science appearances.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

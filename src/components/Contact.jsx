@@ -5,32 +5,20 @@ export default function Contact() {
                 <h4 className="text-center mb-2 text-xl font-Ovo text-[#b820e6]">Let's Connect</h4>
                 <h2 className="text-center text-5xl font-Ovo mb-8">Get in Touch</h2>
                 <p className="text-center max-w-2xl mx-auto mb-16 font-Ovo text-xl text-gray-600 dark:text-gray-300">
-                    I'm always interested in discussing research collaborations, speaking opportunities, or consulting projects in quantum foundations and philosophy of physics.
+                    Always interested in discussing research collaborations, speaking opportunities, or consulting projects in quantum foundations and philosophy of physics.
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="flex justify-center mb-12">
                     {/* Email Card */}
                     <a href="mailto:beth.terris@gmail.com" 
-                       className="group p-8 rounded-2xl border-2 border-gray-200 dark:border-white/20 hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300 hover:shadow-xl bg-white dark:bg-darkHover/30">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                       className="group p-8 rounded-2xl border-2 border-gray-200 dark:border-white/20 hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300 hover:shadow-xl bg-white dark:bg-darkHover/30 max-w-md w-full">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform mx-auto">
                             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-semibold mb-2 dark:text-white">Email</h3>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">beth.terris@gmail.com</p>
-                    </a>
-
-                    {/* Phone Card */}
-                    <a href="tel:+33782968567" 
-                       className="group p-8 rounded-2xl border-2 border-gray-200 dark:border-white/20 hover:border-[#da7d20] dark:hover:border-[#da7d20] transition-all duration-300 hover:shadow-xl bg-white dark:bg-darkHover/30">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#da7d20] to-[#e94560] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                        </div>
-                        <h3 className="text-2xl font-semibold mb-2 dark:text-white">Phone</h3>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">+(33) 782 968 567</p>
+                        <h3 className="text-2xl font-semibold mb-2 dark:text-white text-center">Email</h3>
+                        <p className="text-lg text-gray-600 dark:text-gray-300 text-center">beth.terris@gmail.com</p>
                     </a>
                 </div>
 
@@ -41,7 +29,7 @@ export default function Contact() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span>Paris-Saclay, France</span>
+                        <span>Paris, France</span>
                     </div>
                     
                     <div className="flex items-center justify-center">
