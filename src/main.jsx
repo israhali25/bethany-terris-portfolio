@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import App from './App.jsx'
 import ExperiencesPage from './pages/ExperiencesPage.jsx'
 import PublicationsPage from './pages/PublicationsPage.jsx'
@@ -10,7 +10,7 @@ import TrainingPage from './pages/TrainingPage.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/experiences" element={<ExperiencesPage />} />
@@ -20,5 +20,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/training" element={<TrainingPage />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 )
