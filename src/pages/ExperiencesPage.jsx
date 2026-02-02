@@ -102,7 +102,7 @@ export default function ExperiencesPage() {
                             </div>
 
                             {/* Description */}
-                            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                            <p className="text-xs text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                                 {exp.description}
                             </p>
 
@@ -113,7 +113,7 @@ export default function ExperiencesPage() {
                                 </h3>
                                 <ul className="space-y-2">
                                     {exp.details.map((detail, idx) => (
-                                        <li key={idx} className="flex items-start gap-3 text-lg text-gray-600 dark:text-gray-300">
+                                        <li key={idx} className="flex items-start gap-3 text-xs text-gray-600 dark:text-gray-300">
                                             <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] mt-2 flex-shrink-0"></span>
                                             <span>{detail}</span>
                                         </li>
@@ -127,7 +127,7 @@ export default function ExperiencesPage() {
                 {/* Call to Action */}
                 <div className="max-w-3xl mx-auto mt-20 text-center p-10 border-2 border-gray-200 dark:border-white/20 rounded-2xl bg-gradient-to-br from-gray-50 to-transparent dark:from-darkHover/30 dark:to-transparent">
                     <h3 className="text-2xl font-bold mb-4 dark:text-white">Interested in collaboration?</h3>
-                    <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                    <p className="text-xs text-gray-600 dark:text-gray-300 mb-6">
                         Always open to discussing research collaborations, speaking opportunities, or consulting projects.
                     </p>
                     <Link to="/#contact" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white font-medium hover:shadow-2xl hover:scale-105 transition-all duration-300">

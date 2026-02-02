@@ -54,10 +54,10 @@ export default function PublicationsPage() {
                                 <div className="flex-1">
                                     <p className="text-sm text-[#b820e6] dark:text-[#da7d20] font-medium mb-2">{pub.type}</p>
                                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">{pub.title}</h3>
-                                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Author(s):</span> {pub.authors}
                                     </p>
-                                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Journal:</span> {pub.journal}
                                     </p>
                                     {pub.abstract && (

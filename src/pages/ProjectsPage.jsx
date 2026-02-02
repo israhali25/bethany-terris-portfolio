@@ -71,15 +71,15 @@ export default function ProjectsPage() {
                                         <span className="text-gray-600 dark:text-gray-400">{project.date}</span>
                                     </div>
                                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Author:</span> {project.author}
                                     </p>
-                                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 mb-4">
                                         <span className="font-medium">Institution:</span> {project.institution}
                                     </p>
                                     <div className="bg-gray-50 dark:bg-darkTheme p-6 rounded-lg mb-4">
                                         <p className="font-semibold text-gray-900 dark:text-white mb-2">Abstract:</p>
-                                        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">{project.abstract}</p>
+                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{project.abstract}</p>
                                     </div>
                                 </div>
                             </div>

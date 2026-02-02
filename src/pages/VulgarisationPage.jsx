@@ -45,11 +45,11 @@ export default function VulgarisationPage() {
                                     </div>
                                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{item.type}</h3>
                                     {item.hosts && (
-                                        <p className="text-lg text-gray-600 dark:text-gray-400 mb-3">
+                                        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">
                                             <span className="font-medium">Hosts:</span> {item.hosts}
                                         </p>
                                     )}
-                                    <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">{item.description}</p>
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed mb-4">{item.description}</p>
                                     <a 
                                         href={item.link} 
                                         target="_blank" 

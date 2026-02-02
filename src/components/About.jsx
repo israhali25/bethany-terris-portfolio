@@ -28,8 +28,8 @@ export default function About() {
                     </p>
 
                     <div className="my-3 space-y-1.5 pl-3 border-l-4 border-[#b820e6]">
-                        <p className="text-base font-semibold text-gray-900 dark:text-white">I am a physicist.</p>
-                        <p className="text-base font-semibold text-gray-900 dark:text-white">I am a philosopher.</p>
+                        <p className="text-xs font-semibold text-gray-900 dark:text-white">I am a physicist.</p>
+                        <p className="text-xs font-semibold text-gray-900 dark:text-white">I am a philosopher.</p>
                     </div>
 
                     <p>
