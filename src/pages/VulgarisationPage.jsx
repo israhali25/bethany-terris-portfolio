@@ -20,7 +20,7 @@ export default function VulgarisationPage() {
             
             <div className="w-full px-[12%] py-20 mt-16">
                 <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Scientific Vulgarisation</h1>
-                <p className="text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
+                <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Public engagement and science communication work on quantum mechanics and scientific misinformation.
                 </p>
 
@@ -43,7 +43,7 @@ export default function VulgarisationPage() {
                                         </span>
                                         <span className="text-gray-600 dark:text-gray-400">{item.date}</span>
                                     </div>
-                                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{item.type}</h3>
+                                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{item.type}</h3>
                                     {item.hosts && (
                                         <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">
                                             <span className="font-medium">Hosts:</span> {item.hosts}

@@ -78,7 +78,7 @@ export default function TrainingPage() {
                 <h1 className="text-5xl font-bold font-Ovo mb-4 text-center bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Training & Professional Development
                 </h1>
-                <p className="text-center text-xl text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
+                <p className="text-center text-xs text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
                     Workshops, summer schools, and research networks in foundations of physics
                 </p>
 
@@ -99,7 +99,7 @@ export default function TrainingPage() {
                                 <div className="flex-1">
                                     <div className="flex items-start justify-between mb-3">
                                         <div>
-                                            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                                            <h2 className="text-sm font-semibold text-gray-800 dark:text-white mb-2">
                                                 {training.name}
                                             </h2>
                                             <div className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-[#b820e6]/10 to-[#da7d20]/10 border border-[#b820e6]/30 dark:border-[#da7d20]/30 mb-3">
@@ -124,7 +124,7 @@ export default function TrainingPage() {
                                             <span>{training.date}</span>
                                         </div>
                                     </div>
-                                    <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
                                         {training.description}
                                     </p>
                                 </div>
@@ -135,7 +135,7 @@ export default function TrainingPage() {
 
                 {/* Courses Section */}
                 <div className="max-w-5xl mx-auto mt-20">
-                    <h2 className="text-4xl font-bold font-Ovo mb-8 text-center bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
+                    <h2 className="text-lg font-bold font-Ovo mb-8 text-center bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
                         Professional Development Courses
                     </h2>
                     <div className="space-y-8">
@@ -151,7 +151,7 @@ export default function TrainingPage() {
                                         </svg>
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                                        <h3 className="text-sm font-semibold text-gray-800 dark:text-white mb-2">
                                             {course.name}
                                         </h3>
                                         <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300 mb-4">
@@ -160,7 +160,7 @@ export default function TrainingPage() {
                                             </svg>
                                             <span>{course.date}</span>
                                         </div>
-                                        <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
                                             {course.description}
                                         </p>
                                     </div>

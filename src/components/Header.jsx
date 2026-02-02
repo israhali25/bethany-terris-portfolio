@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <div className="w-11/12 max-w-2xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-3">
             <div className="space-y-1">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-Ovo bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
+                <h1 className="text-sm sm:text-base lg:text-lg font-bold font-Ovo bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Bethany Terris
                 </h1>
                 <p className="text-base sm:text-lg font-light text-gray-600 dark:text-gray-300">PhD, Philosophy of Physics</p>

@@ -45,9 +45,9 @@ export default function Skills() {
     return (
         <div id="skills" className="w-full px-[12%] py-20 scroll-mt-20">
             <div className="text-center mb-16">
-                <h4 className="mb-3 text-xl font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
+                <h4 className="mb-3 text-xs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
                 <h2 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
-                <p className="text-xl text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
+                <p className="text-xs text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
                     Interdisciplinary training bridging philosophy, physics, and science communication
                 </p>
             </div>
@@ -58,7 +58,7 @@ export default function Skills() {
                         key={index}
                         className="border-2 border-gray-200 dark:border-white/20 rounded-xl p-8 bg-white dark:bg-darkHover hover:shadow-xl hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300"
                     >
-                        <h3 className="text-2xl font-semibold text-gray-900 dark:text-white font-Ovo mb-6">
+                        <h3 className="text-sm font-semibold text-gray-900 dark:text-white font-Ovo mb-6">
                             {category.title}
                         </h3>
                         <ul className="space-y-3">
@@ -78,10 +78,10 @@ export default function Skills() {
 
             <div className="mt-16 max-w-4xl mx-auto text-center">
                 <div className="bg-gradient-to-r from-purple-50 to-orange-50 dark:from-darkHover dark:to-darkHover border-2 border-gray-200 dark:border-white/20 rounded-xl p-8">
-                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 font-Ovo">
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-4 font-Ovo">
                         Interdisciplinary Approach
                     </h3>
-                    <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
                         My training in <span className="font-semibold text-[#b820e6]">philosophy of physics</span> provides a unique perspective that bridges theoretical precision with conceptual clarity. This interdisciplinary foundation enables me to navigate complex scientific questions while maintaining rigorous standards of both philosophical analysis and empirical research, making technical quantum concepts accessible without sacrificing intellectual depth.
                     </p>
                 </div>

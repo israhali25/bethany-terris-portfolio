@@ -2,9 +2,9 @@ export default function Contact() {
     return (
         <div id="contact" className="w-full px-[12%] py-20 scroll-mt-20">
             <div className="max-w-4xl mx-auto">
-                <h4 className="text-center mb-2 text-xl font-Ovo text-[#b820e6]">Let's Connect</h4>
+                <h4 className="text-center mb-2 text-xs font-Ovo text-[#b820e6]">Let's Connect</h4>
                 <h2 className="text-center text-5xl font-Ovo mb-8">Get in Touch</h2>
-                <p className="text-center max-w-2xl mx-auto mb-16 font-Ovo text-xl text-gray-600 dark:text-gray-300">
+                <p className="text-center max-w-2xl mx-auto mb-16 font-Ovo text-xs text-gray-600 dark:text-gray-300">
                     Always interested in discussing research collaborations, speaking opportunities, or consulting projects in quantum foundations and philosophy of physics.
                 </p>
 
@@ -17,7 +17,7 @@ export default function Contact() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-semibold mb-2 dark:text-white text-center">Email</h3>
+                        <h3 className="text-sm font-semibold mb-2 dark:text-white text-center">Email</h3>
                         <p className="text-lg text-gray-600 dark:text-gray-300 text-center">beth.terris@gmail.com</p>
                     </a>
                 </div>

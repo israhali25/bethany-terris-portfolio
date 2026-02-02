@@ -47,7 +47,7 @@ export default function ProjectsPage() {
             
             <div className="w-full px-[12%] py-20 mt-16">
                 <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Projects</h1>
-                <p className="text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
+                <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Master's thesis and coursework essays from the University of Bristol.
                 </p>
 
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
                                         </span>
                                         <span className="text-gray-600 dark:text-gray-400">{project.date}</span>
                                     </div>
-                                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
+                                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
                                     <p className="text-xs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Author:</span> {project.author}
                                     </p>

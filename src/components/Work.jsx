@@ -29,7 +29,7 @@ export default function Work() {
     ];
     return (
         <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 className="text-center mb-2 text-xl font-Ovo">My Work</h4>
+            <h4 className="text-center mb-2 text-xs font-Ovo">My Work</h4>
             <h2 className="text-center text-5xl font-Ovo">Research & Publications</h2>
             <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-xl">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
 
@@ -55,7 +55,7 @@ export default function Work() {
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">{category.name}</h2>
+                        <h2 className="text-sm font-semibold mb-2 text-gray-800 dark:text-white">{category.name}</h2>
                         <p className="text-lg text-gray-600 dark:text-white/70 mb-2">{category.description}</p>
                         <p className="text-sm text-[#b820e6] dark:text-[#da7d20] font-medium">{category.count}</p>
                     </Link>

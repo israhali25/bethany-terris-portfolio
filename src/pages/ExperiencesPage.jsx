@@ -72,7 +72,7 @@ export default function ExperiencesPage() {
                 <h1 className="text-5xl md:text-6xl font-bold font-Ovo mb-6 bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Communication & Outreach
                 </h1>
-                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl">
+                <p className="text-xs text-gray-600 dark:text-gray-300 max-w-3xl">
                     Selected presentations, collaborations, and public engagement activities showcasing my commitment to 
                     clear scientific communication and interdisciplinary dialogue.
                 </p>
@@ -88,7 +88,7 @@ export default function ExperiencesPage() {
                                 <div className="text-5xl">{exp.icon}</div>
                                 <div className="flex-1">
                                     <div className="flex flex-wrap items-center gap-3 mb-2">
-                                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">
+                                        <h2 className="text-sm md:text-base font-bold text-gray-800 dark:text-white">
                                             {exp.title}
                                         </h2>
                                         <span className="px-4 py-1 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white text-sm font-medium">
@@ -108,7 +108,7 @@ export default function ExperiencesPage() {
 
                             {/* Details */}
                             <div className="space-y-3">
-                                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                                <h3 className="text-xs font-semibold text-gray-800 dark:text-white mb-3">
                                     Key Highlights:
                                 </h3>
                                 <ul className="space-y-2">
@@ -126,7 +126,7 @@ export default function ExperiencesPage() {
 
                 {/* Call to Action */}
                 <div className="max-w-3xl mx-auto mt-20 text-center p-10 border-2 border-gray-200 dark:border-white/20 rounded-2xl bg-gradient-to-br from-gray-50 to-transparent dark:from-darkHover/30 dark:to-transparent">
-                    <h3 className="text-2xl font-bold mb-4 dark:text-white">Interested in collaboration?</h3>
+                    <h3 className="text-sm font-bold mb-4 dark:text-white">Interested in collaboration?</h3>
                     <p className="text-xs text-gray-600 dark:text-gray-300 mb-6">
                         Always open to discussing research collaborations, speaking opportunities, or consulting projects.
                     </p>

@@ -35,7 +35,7 @@ export default function PublicationsPage() {
             
             <div className="w-full px-[12%] py-20 mt-16">
                 <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Publications</h1>
-                <p className="text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
+                <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Journal articles, PhD thesis, and academic publications in quantum foundations and philosophy of physics.
                 </p>
 
@@ -53,7 +53,7 @@ export default function PublicationsPage() {
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-sm text-[#b820e6] dark:text-[#da7d20] font-medium mb-2">{pub.type}</p>
-                                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">{pub.title}</h3>
+                                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">{pub.title}</h3>
                                     <p className="text-xs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Author(s):</span> {pub.authors}
                                     </p>
@@ -63,7 +63,7 @@ export default function PublicationsPage() {
                                     {pub.abstract && (
                                         <div className="bg-gray-50 dark:bg-darkTheme p-6 rounded-lg my-4">
                                             <p className="font-semibold text-gray-900 dark:text-white mb-2">Abstract:</p>
-                                            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">{pub.abstract}</p>
+                                            <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{pub.abstract}</p>
                                         </div>
                                     )}
                                     {pub.doi && (

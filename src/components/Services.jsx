@@ -31,9 +31,9 @@ export default function Services() {
                 {services.map((service, index) => (
                     <div key={service.name} className="group border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 hover:border-[#b820e6] dark:hover:border-[#b820e6] cursor-pointer hover:-translate-y-2 duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
                         <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                            <span className="text-white text-2xl font-bold">{index + 1}</span>
+                            <span className="text-white text-sm font-bold">{index + 1}</span>
                         </div>
-                        <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">{service.name}</h3>
+                        <h3 className="text-sm font-semibold mb-3 text-gray-800 dark:text-white">{service.name}</h3>
                         <p className="text-lg text-gray-600 leading-relaxed dark:text-gray-300">{service.description}</p>
                     </div>
                 ))}
