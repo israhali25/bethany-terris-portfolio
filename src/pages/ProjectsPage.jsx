@@ -81,12 +81,6 @@ export default function ProjectsPage() {
                                         <p className="font-semibold text-gray-900 dark:text-white mb-2">Abstract:</p>
                                         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">{project.abstract}</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-[#b820e6] dark:text-[#da7d20]">
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
-                                        <span className="font-medium">PDF: {project.pdf}</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
