@@ -24,14 +24,14 @@ export default function Work() {
             name: 'Projects',
             description: 'Master\'s thesis and coursework essays',
             link: '/projects',
-            count: '2 projects'
+            count: '4 projects'
         }
     ];
     return (
         <div id="work" className="w-full px-[12%] py-5 scroll-mt-20">
-            <h4 className="text-center mb-2 text-xxs font-Ovo">My Work</h4>
-            <h2 className="text-center text-xxs font-Ovo">Research & Publications</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-3 font-Ovo text-xxs">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
+            <h4 className="text-center mb-2 text-xs font-Ovo">My Work</h4>
+            <h2 className="text-center text-xs font-Ovo">Research & Publications</h2>
+
 
             <div className="grid grid-cols-1 md:grid-cols-2 my-10 gap-3">
                 {workCategories.map((category, index) => (

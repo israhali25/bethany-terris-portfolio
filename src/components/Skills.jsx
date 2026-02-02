@@ -45,8 +45,8 @@ export default function Skills() {
     return (
         <div id="skills" className="w-full px-[12%] py-5 scroll-mt-20">
             <div className="text-center mb-4">
-                <h4 className="mb-3 text-xxs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
-                <h2 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
+                <h4 className="mb-3 text-xs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
+                <h2 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
                 <p className="text-xxs text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
                     Interdisciplinary training bridging philosophy, physics, and science communication
                 </p>

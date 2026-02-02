@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 export default function Training() {
     return (
         <div id="training" className="w-full px-[12%] py-5 scroll-mt-20">
-            <h4 className="text-center mb-2 text-xxs font-Ovo">Training</h4>
-            <h2 className="text-center text-xxs font-Ovo mb-4">Professional Development</h2>
+            <h4 className="text-center mb-2 text-xs font-Ovo">Training</h4>
+            <h2 className="text-center text-xs font-Ovo mb-4">Professional Development</h2>
             <p className="text-center max-w-2xl mx-auto mt-5 mb-3 font-Ovo text-xxs">
                 Workshops, summer schools, research networks, and specialised courses in scientific communication, writing, and grant preparation.
             </p>

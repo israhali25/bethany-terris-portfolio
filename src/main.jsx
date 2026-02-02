@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import App from './App.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 import ExperiencesPage from './pages/ExperiencesPage.jsx'
 import PublicationsPage from './pages/PublicationsPage.jsx'
 import ConferencesPage from './pages/ConferencesPage.jsx'
@@ -11,6 +12,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <HashRouter>
+        <ScrollToTop />
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/experiences" element={<ExperiencesPage />} />

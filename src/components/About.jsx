@@ -2,8 +2,8 @@ export default function About() {
     return (
         <div id="about" className="w-full px-[12%] py-12 scroll-mt-20 bg-gradient-to-b from-white via-purple-50/20 to-orange-50/20 dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
             <div className="text-center mb-4">
-                <h4 className="mb-1 text-xxs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Introduction</h4>
-                <h2 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white">Who Am I?</h2>
+                <h4 className="mb-1 text-xs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Introduction</h4>
+                <h2 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white">Who Am I?</h2>
                 <p className="text-xxs text-gray-700 dark:text-gray-300 mt-1 italic">The question we all ask ourselves</p>
             </div>
 

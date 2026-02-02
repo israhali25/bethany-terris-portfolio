@@ -2,12 +2,12 @@ export default function Footer() {
     return (
         <div className="mt-20">
             <div className="text-center">
-                <a href="#!" className="inline-flex items-center gap-2 mb-4">
+                <div className="inline-flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center text-white font-bold">
                         BT
                     </div>
                     <span className="text-xxs font-bold font-Ovo dark:text-white">Bethany Terris, Ph.D.</span>
-                </a>
+                </div>
 
                 <div className="w-max flex items-center gap-2 mx-auto text-xxs">
                     <img src="./assets/mail_icon.png" alt="" className="w-6 dark:hidden" />
