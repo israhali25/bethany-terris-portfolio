@@ -9,7 +9,7 @@ export default function About() {
 
             <div className="flex w-full flex-col lg:flex-row items-start gap-4 max-w-5xl mx-auto">
                 {/* Photo sticky */}
-                <div className="w-full lg:w-56 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
+                <div className="w-full lg:w-48 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
                     <div className="relative">
                         <img 
                             src="./assets/profile-pic.jpg" 
@@ -21,15 +21,15 @@ export default function About() {
                 </div>
                 
                 {/* Contenu */}
-                <div className="flex-1 space-y-2 text-xxs leading-normal font-Ovo text-gray-700 dark:text-gray-300">
+                <div className="flex-1 space-y-2 text-xxs leading-normal font-Ovo text-gray-700 dark:text-gray-300 text-justify">
                     
-                    <p>
+                    <p className="font-bold text-xxs">
                         For me, this question has never been straightforward. For years now, I have felt myself split across worlds (a common occupational hazard for anyone who spends too much time with Everett!)
                     </p>
 
                     <div className="my-3 space-y-1.5 pl-3 border-l-4 border-[#b820e6]">
-                        <p className="text-xxs text-gray-700 dark:text-gray-300">I am a physicist.</p>
-                        <p className="text-xxs text-gray-700 dark:text-gray-300">I am a philosopher.</p>
+                        <p className="font-bold text-xxs text-gray-700 dark:text-gray-300">I am a physicist.</p>
+                        <p className="font-bold text-xxs text-gray-700 dark:text-gray-300">I am a philosopher.</p>
                     </div>
 
                     <p className="font-bold text-xxs">
@@ -40,7 +40,7 @@ export default function About() {
                         Physics enticed me with technical precision and the promise of explanation. Philosophy pulled me towards the very edges – what counts as reality, what it means to observe, what it takes to know anything at all.
                     </p>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         My PhD in Philosophy of Physics was the collision. Somehow, the worlds met again.
                     </p>
 
@@ -52,11 +52,11 @@ export default function About() {
                         As quantum technologies move from the lab into industry and public discourse, the gap between what the theory actually says and what people think it says is widening fast. Quantum mechanics is powerful, and routinely misunderstood. Sometimes accidentally. Often strategically.
                     </p>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         This is where my interest in science communication comes in. I care about how quantum ideas travel. What gets simplified. What gets distorted. And how vague references to "quantum" are used to sell certainty, authority, or even ideology, without understanding the science underneath.
                     </p>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         I'm interested in quantum technology not just as a scientific achievement, but as a social one. What we build matters. So does how we talk about it. And if we don't take responsibility for that conversation, someone else will – badly.
                     </p>
 
