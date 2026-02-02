@@ -58,10 +58,10 @@ export default function Navbar() {
                     <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center text-white font-bold text-sm">
                         BT
                     </div>
-                    <span className="text-2xl font-bold font-Ovo dark:text-white">Bethany Terris</span>
+                    <span className="text-xl font-bold font-Ovo dark:text-white">Bethany Terris</span>
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent text-base">
+                <ul ref={navLinkRef} className="hidden md:flex items-center gap-4 lg:gap-6 rounded-full px-8 py-2.5 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent text-sm">
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/'); else window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}>About me</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }); }}>My Work</a></li>
@@ -76,7 +76,7 @@ export default function Navbar() {
                         <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
-                    <a onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hidden lg:flex items-center gap-3 px-10 py-2.5 text-base border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30 cursor-pointer">
+                    <a onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hidden lg:flex items-center gap-2 px-6 py-2 text-sm border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30 cursor-pointer">
                         Contact
                         <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
                         <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
