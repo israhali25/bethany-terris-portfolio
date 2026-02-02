@@ -28,17 +28,17 @@ export default function Work() {
         }
     ];
     return (
-        <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 className="text-center mb-2 text-xs font-Ovo">My Work</h4>
-            <h2 className="text-center text-xs font-Ovo">Research & Publications</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-xs">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
+        <div id="work" className="w-full px-[12%] py-5 scroll-mt-20">
+            <h4 className="text-center mb-2 text-xxs font-Ovo">My Work</h4>
+            <h2 className="text-center text-xxs font-Ovo">Research & Publications</h2>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-3 font-Ovo text-xxs">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 my-10 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 my-10 gap-3">
                 {workCategories.map((category, index) => (
                     <Link 
                         key={category.name} 
                         to={category.link}
-                        className="border border-gray-300 dark:border-white/30 rounded-xl p-8 hover:shadow-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white/20 bg-white dark:bg-darkTheme"
+                        className="border border-gray-300 dark:border-white/30 rounded-xl p-4 hover:shadow-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white/20 bg-white dark:bg-darkTheme"
                     >
                         <div className="flex items-start justify-between mb-4">
                             <div className="w-14 h-14 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center">
@@ -49,15 +49,15 @@ export default function Work() {
                                     {index === 3 && <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />}
                                 </svg>
                             </div>
-                            <div className="border rounded-full border-gray-400 dark:border-white/40 w-10 h-10 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#b820e6] hover:to-[#da7d20] hover:border-transparent transition group">
+                            <div className="border rounded-full border-gray-400 dark:border-white/40 w-5 h-5 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#b820e6] hover:to-[#da7d20] hover:border-transparent transition group">
                                 <svg className="w-5 h-5 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-sm font-semibold mb-2 text-gray-800 dark:text-white">{category.name}</h2>
-                        <p className="text-xs text-gray-600 dark:text-white/70 mb-2">{category.description}</p>
-                        <p className="text-sm text-[#b820e6] dark:text-[#da7d20] font-medium">{category.count}</p>
+                        <h2 className="text-xxs font-semibold mb-2 text-gray-800 dark:text-white">{category.name}</h2>
+                        <p className="text-xxs text-gray-600 dark:text-white/70 mb-2">{category.description}</p>
+                        <p className="text-xxs text-[#b820e6] dark:text-[#da7d20] font-medium">{category.count}</p>
                     </Link>
                 ))}
             </div>

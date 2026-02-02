@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            fontSize: {
+                'xxs': '0.625rem', // 10px
+            },
             gridTemplateColumns: {
                 'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
             },
