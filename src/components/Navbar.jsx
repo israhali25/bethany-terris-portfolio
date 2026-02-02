@@ -52,16 +52,16 @@ export default function Navbar() {
                 <img src="./assets/header-bg-color.png" alt="" className="w-full" />
             </div>
 
-            <nav ref={navRef} className="w-full fixed px-6 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50">
+            <nav ref={navRef} className="w-full fixed px-3 lg:px-4 xl:px-[8%] py-1 flex items-center justify-between z-50">
 
                 <a onClick={() => navigate('/')} className="flex items-center gap-2 cursor-pointer">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center text-white font-bold text-xxs">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center text-white font-bold text-xxs">
                         BT
                     </div>
                     <span className="text-xxs font-bold font-Ovo dark:text-white">Bethany Terris</span>
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-10 rounded-full px-6 py-2 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent text-xxs">
+                <ul ref={navLinkRef} className="hidden md:flex items-center gap-3 lg:gap-5 rounded-full px-3 py-1 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent text-xxs">
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') navigate('/'); else window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}>About me</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }); }}>My Work</a></li>
@@ -70,13 +70,13 @@ export default function Navbar() {
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition cursor-pointer' onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>Contact me</a></li>
                 </ul>
 
-                <div className="flex items-center gap-8">
+                <div className="flex items-center gap-4">
                     <button onClick={toggleTheme}>
                         <img src="./assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
                         <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
-                    <a onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hidden lg:flex items-center gap-1.5 px-6 py-3 text-xxs border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-3 font-Ovo dark:border-white/30 cursor-pointer">
+                    <a onClick={() => { if (location.pathname !== '/') { navigate('/'); setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 200); } else document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 text-xxs border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-3 font-Ovo dark:border-white/30 cursor-pointer">
                         Contact
                         <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
                         <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
@@ -89,7 +89,7 @@ export default function Navbar() {
 
                 </div>
                 {/* -- ----- mobile menu ------  -- */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-8 py-20 px-6 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-5 px-3 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
                         <img src="./assets/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />

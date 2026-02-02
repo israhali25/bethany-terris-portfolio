@@ -26,14 +26,14 @@ export default function Services() {
         }
     ];
     return (
-        <div id="services" className="w-full px-[12%] py-20 scroll-mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 max-w-5xl mx-auto">
+        <div id="services" className="w-full px-[12%] py-5 scroll-mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10 max-w-5xl mx-auto">
                 {services.map((service, index) => (
-                    <div key={service.name} className="group border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 hover:border-[#b820e6] dark:hover:border-[#b820e6] cursor-pointer hover:-translate-y-2 duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                    <div key={service.name} className="group border-2 border-gray-200 dark:border-white/20 rounded-xl p-4 hover:border-[#b820e6] dark:hover:border-[#b820e6] cursor-pointer hover:-translate-y-2 duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                             <span className="text-white text-xxs font-bold">{index + 1}</span>
                         </div>
-                        <h3 className="text-xxs font-semibold mb-6 text-gray-800 dark:text-white">{service.name}</h3>
+                        <h3 className="text-xxs font-semibold mb-3 text-gray-800 dark:text-white">{service.name}</h3>
                         <p className="text-xxs text-gray-600 leading-normal dark:text-gray-300">{service.description}</p>
                     </div>
                 ))}

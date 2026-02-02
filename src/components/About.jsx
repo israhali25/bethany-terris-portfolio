@@ -1,22 +1,22 @@
 export default function About() {
     return (
-        <div id="about" className="w-full px-[12%] py-22 scroll-mt-20 bg-gradient-to-b from-white via-purple-50/20 to-orange-50/20 dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
-            <div className="text-center mb-8">
+        <div id="about" className="w-full px-[12%] py-12 scroll-mt-20 bg-gradient-to-b from-white via-purple-50/20 to-orange-50/20 dark:from-darkTheme dark:via-darkTheme dark:to-darkTheme">
+            <div className="text-center mb-4">
                 <h4 className="mb-1 text-xxs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Introduction</h4>
                 <h2 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white">Who Am I?</h2>
                 <p className="text-xxs text-gray-700 dark:text-gray-300 mt-1 italic">The question we all ask ourselves</p>
             </div>
 
-            <div className="flex w-full flex-col lg:flex-row items-start gap-8 max-w-5xl mx-auto">
+            <div className="flex w-full flex-col lg:flex-row items-start gap-4 max-w-5xl mx-auto">
                 {/* Photo sticky */}
                 <div className="w-full lg:w-56 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
                     <div className="relative">
                         <img 
                             src="./assets/profile-pic.jpg" 
                             alt="Bethany Terris" 
-                            className="w-full aspect-square rounded-2xl object-cover shadow-2xl"
+                            className="w-full aspect-square rounded-xl object-cover shadow-2xl"
                         />
-                        <div className="absolute -inset-4 bg-gradient-to-br from-[#b820e6] via-[#da7d20] to-[#e94560] rounded-2xl blur-2xl opacity-20 -z-10"></div>
+                        <div className="absolute -inset-4 bg-gradient-to-br from-[#b820e6] via-[#da7d20] to-[#e94560] rounded-xl blur-2xl opacity-20 -z-10"></div>
                     </div>
                 </div>
                 
@@ -44,7 +44,7 @@ export default function About() {
                         My PhD in Philosophy of Physics was the collision. Somehow, the worlds met again.
                     </p>
 
-                    <p className="mt-8">
+                    <p className="mt-4">
                         The thing is, quantum theory is no longer confined to foundational work. It's becoming technology, infrastructure, policy.
                     </p>
 
@@ -60,7 +60,7 @@ export default function About() {
                         I'm interested in quantum technology not just as a scientific achievement, but as a social one. What we build matters. So does how we talk about it. And if we don't take responsibility for that conversation, someone else will – badly.
                     </p>
 
-                    <div className="mt-12 pt-3 border-t-2 border-gray-200 dark:border-gray-700">
+                    <div className="mt-6 pt-3 border-t-2 border-gray-200 dark:border-gray-700">
                         <p className="font-bold text-xxs">
                             Now, instead of doing the research, I write about it. On this website, you can find a portfolio of my work, including academic publications, conference talks, blog posts, and popular science appearances.
                         </p>

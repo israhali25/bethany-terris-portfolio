@@ -43,29 +43,29 @@ export default function Skills() {
     ];
 
     return (
-        <div id="skills" className="w-full px-[12%] py-20 scroll-mt-20">
-            <div className="text-center mb-8">
-                <h4 className="mb-6 text-xxs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
+        <div id="skills" className="w-full px-[12%] py-5 scroll-mt-20">
+            <div className="text-center mb-4">
+                <h4 className="mb-3 text-xxs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
                 <h2 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
-                <p className="text-xxs text-gray-700 dark:text-gray-300 mt-8 max-w-2xl mx-auto">
+                <p className="text-xxs text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
                     Interdisciplinary training bridging philosophy, physics, and science communication
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
                 {skillCategories.map((category, index) => (
                     <div 
                         key={index}
-                        className="border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 bg-white dark:bg-darkHover hover:shadow-xl hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300"
+                        className="border-2 border-gray-200 dark:border-white/20 rounded-xl p-4 bg-white dark:bg-darkHover hover:shadow-xl hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300"
                     >
-                        <h3 className="text-xxs font-semibold text-gray-900 dark:text-white font-Ovo mb-6">
+                        <h3 className="text-xxs font-semibold text-gray-900 dark:text-white font-Ovo mb-3">
                             {category.title}
                         </h3>
-                        <ul className="space-y-6">
+                        <ul className="space-y-3">
                             {category.skills.map((skill, skillIndex) => (
                                 <li 
                                     key={skillIndex}
-                                    className="flex items-start gap-6 text-xxs text-gray-700 dark:text-gray-300"
+                                    className="flex items-start gap-3 text-xxs text-gray-700 dark:text-gray-300"
                                 >
                                     <span className="text-[#b820e6] mt-1 flex-shrink-0">•</span>
                                     <span>{skill}</span>
@@ -76,9 +76,9 @@ export default function Skills() {
                 ))}
             </div>
 
-            <div className="mt-8 max-w-4xl mx-auto text-center">
-                <div className="bg-gradient-to-r from-purple-50 to-orange-50 dark:from-darkHover dark:to-darkHover border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8">
-                    <h3 className="text-xxs font-semibold text-gray-900 dark:text-white mb-8 font-Ovo">
+            <div className="mt-4 max-w-4xl mx-auto text-center">
+                <div className="bg-gradient-to-r from-purple-50 to-orange-50 dark:from-darkHover dark:to-darkHover border-2 border-gray-200 dark:border-white/20 rounded-xl p-4">
+                    <h3 className="text-xxs font-semibold text-gray-900 dark:text-white mb-4 font-Ovo">
                         Interdisciplinary Approach
                     </h3>
                     <p className="text-xxs text-gray-700 dark:text-gray-300 leading-normal">

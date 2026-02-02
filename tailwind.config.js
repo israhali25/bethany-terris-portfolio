@@ -7,7 +7,7 @@ export default {
     theme: {
         extend: {
             fontSize: {
-                'xxs': '0.875rem', // 14px - taille normale lisible
+                'xxs': '0.625rem', // 10px
             },
             gridTemplateColumns: {
                 'auto': 'repeat(auto-fit, minmax(200px, 1fr))'

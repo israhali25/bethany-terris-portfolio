@@ -28,19 +28,19 @@ export default function Work() {
         }
     ];
     return (
-        <div id="work" className="w-full px-[12%] py-20 scroll-mt-20">
+        <div id="work" className="w-full px-[12%] py-5 scroll-mt-20">
             <h4 className="text-center mb-2 text-xxs font-Ovo">My Work</h4>
             <h2 className="text-center text-xxs font-Ovo">Research & Publications</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-6 font-Ovo text-xxs">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-3 font-Ovo text-xxs">Explore my research portfolio showcasing publications in quantum foundations, measurement theory, and philosophy of physics.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 my-10 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 my-10 gap-3">
                 {workCategories.map((category, index) => (
                     <Link 
                         key={category.name} 
                         to={category.link}
-                        className="border border-gray-300 dark:border-white/30 rounded-2xl p-8 hover:shadow-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white/20 bg-white dark:bg-darkTheme"
+                        className="border border-gray-300 dark:border-white/30 rounded-xl p-4 hover:shadow-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white/20 bg-white dark:bg-darkTheme"
                     >
-                        <div className="flex items-start justify-between mb-8">
+                        <div className="flex items-start justify-between mb-4">
                             <div className="w-14 h-14 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center">
                                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     {index === 0 && <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />}
@@ -49,8 +49,8 @@ export default function Work() {
                                     {index === 3 && <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />}
                                 </svg>
                             </div>
-                            <div className="border rounded-full border-gray-400 dark:border-white/40 w-10 h-10 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#b820e6] hover:to-[#da7d20] hover:border-transparent transition group">
-                                <svg className="w-10 h-10 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="border rounded-full border-gray-400 dark:border-white/40 w-5 h-5 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#b820e6] hover:to-[#da7d20] hover:border-transparent transition group">
+                                <svg className="w-5 h-5 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                 </svg>
                             </div>

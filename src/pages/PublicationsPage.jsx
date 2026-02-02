@@ -33,27 +33,27 @@ export default function PublicationsPage() {
         <div className="overflow-x-hidden antialiased text-gray-800 dark:bg-darkTheme dark:text-white">
             <Navbar />
             
-            <div className="w-full px-[12%] py-20 mt-8">
-                <h1 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white mb-6">Publications</h1>
-                <p className="text-xxs text-gray-700 dark:text-gray-300 mb-6 max-w-3xl">
+            <div className="w-full px-[12%] py-5 mt-4">
+                <h1 className="text-xxs font-Ovo font-bold text-gray-900 dark:text-white mb-3">Publications</h1>
+                <p className="text-xxs text-gray-700 dark:text-gray-300 mb-3 max-w-3xl">
                     Journal articles, PhD thesis, and academic publications in quantum foundations and philosophy of physics.
                 </p>
 
-                <div className="space-y-8">
+                <div className="space-y-4">
                     {publications.map((pub, index) => (
                         <div 
                             key={index} 
-                            className="border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 bg-white dark:bg-darkHover hover:shadow-lg transition duration-300"
+                            className="border-2 border-gray-200 dark:border-white/20 rounded-xl p-4 bg-white dark:bg-darkHover hover:shadow-lg transition duration-300"
                         >
-                            <div className="flex items-start gap-8 mb-8">
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center flex-shrink-0">
-                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="flex items-start gap-4 mb-4">
+                                <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] flex items-center justify-center flex-shrink-0">
+                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                                     </svg>
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-xxs text-[#b820e6] dark:text-[#da7d20] font-medium mb-2">{pub.type}</p>
-                                    <h3 className="text-xxs font-semibold text-gray-900 dark:text-white mb-6">{pub.title}</h3>
+                                    <h3 className="text-xxs font-semibold text-gray-900 dark:text-white mb-3">{pub.title}</h3>
                                     <p className="text-xxs text-gray-700 dark:text-gray-300 mb-2">
                                         <span className="font-medium">Author(s):</span> {pub.authors}
                                     </p>
