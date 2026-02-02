@@ -9,7 +9,7 @@ export default function About() {
 
             <div className="flex w-full flex-col lg:flex-row items-start gap-4 max-w-5xl mx-auto">
                 {/* Photo sticky */}
-                <div className="w-full lg:w-48 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
+                <div className="w-full lg:w-40 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
                     <div className="relative">
                         <img 
                             src="./assets/profile-pic.jpg" 
