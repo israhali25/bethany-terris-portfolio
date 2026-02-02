@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-6 py-1 text-xxs">
-                <p>© {new Date().getFullYear()} Bethany Terris, Ph.D. • All rights reserved.</p>
+                <p className="font-bold text-xxs">© {new Date().getFullYear()} Bethany Terris, Ph.D. • All rights reserved.</p>
                 <div className="mt-4 sm:mt-0">
                     <a href="https://www.linkedin.com/in/bethanyterris/" 
                        target="_blank" 

@@ -18,17 +18,17 @@ export default function Header() {
     return (
         <div className="w-11/12 max-w-2xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-3">
             <div className="space-y-1">
-                <h1 className="text-xxs sm:text-xxs lg:text-xxs font-bold font-Ovo bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
+                <h1 className="text-sm sm:text-base lg:text-lg font-bold font-Ovo bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Bethany Terris
                 </h1>
-                <p className="text-xxs sm:text-xxs font-light text-gray-600 dark:text-gray-300">PhD, Philosophy of Physics</p>
+                <p className="text-xs sm:text-sm font-light text-gray-600 dark:text-gray-300">PhD, Philosophy of Physics</p>
             </div>
 
             <div className="max-w-xl space-y-2">
-                <p className="text-xxs font-Ovo text-gray-700 dark:text-gray-300 leading-normal">
+                <p className="text-xs font-Ovo text-gray-700 dark:text-gray-300 leading-normal">
                     Interdisciplinary researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span> translating theory and experiment into clear, responsible science communication.
                 </p>
-                <div className="flex flex-wrap items-center justify-center gap-3 text-xxs text-gray-600 dark:text-gray-400">
+                <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-gray-600 dark:text-gray-400">
                     <span className="flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 bg-[#b820e6] rounded-full"></span>
                         Paris, France
