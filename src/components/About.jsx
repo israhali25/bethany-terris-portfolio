@@ -12,7 +12,7 @@ export default function About() {
                 <div className="w-full lg:w-80 flex-shrink-0 mx-auto lg:mx-0 lg:sticky lg:top-24">
                     <div className="relative">
                         <img 
-                            src="./assets/profile-img.png" 
+                            src="./assets/profile-pic.jpg" 
                             alt="Bethany Terris" 
                             className="w-full aspect-square rounded-2xl object-cover shadow-2xl"
                         />
