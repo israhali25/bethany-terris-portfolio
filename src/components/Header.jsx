@@ -9,7 +9,7 @@ export default function Header() {
             navigate('/');
             setTimeout(() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
+            }, 200);
         } else {
             document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
         }
