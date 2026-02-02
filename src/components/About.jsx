@@ -32,11 +32,11 @@ export default function About() {
                         <p className="text-xxs text-gray-700 dark:text-gray-300">I am a philosopher.</p>
                     </div>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         And for a long time, these identities felt less like complementary perspectives than like parallel branches, each internally coherent, yet stubbornly resistant to collapse into a single story.
                     </p>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         Physics enticed me with technical precision and the promise of explanation. Philosophy pulled me towards the very edges – what counts as reality, what it means to observe, what it takes to know anything at all.
                     </p>
 
@@ -44,11 +44,11 @@ export default function About() {
                         My PhD in Philosophy of Physics was the collision. Somehow, the worlds met again.
                     </p>
 
-                    <p className="mt-4">
+                    <p className="font-bold text-xxs">
                         The thing is, quantum theory is no longer confined to foundational work. It's becoming technology, infrastructure, policy.
                     </p>
 
-                    <p>
+                    <p className="font-bold text-xxs">
                         As quantum technologies move from the lab into industry and public discourse, the gap between what the theory actually says and what people think it says is widening fast. Quantum mechanics is powerful, and routinely misunderstood. Sometimes accidentally. Often strategically.
                     </p>
 
