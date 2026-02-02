@@ -34,7 +34,7 @@ export default function PublicationsPage() {
             <Navbar />
             
             <div className="w-full px-[12%] py-20 mt-16">
-                <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Publications</h1>
+                <h1 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white mb-6">Publications</h1>
                 <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Journal articles, PhD thesis, and academic publications in quantum foundations and philosophy of physics.
                 </p>

@@ -75,7 +75,7 @@ export default function TrainingPage() {
         <>
             <Navbar />
             <div className="w-full px-[12%] py-32">
-                <h1 className="text-5xl font-bold font-Ovo mb-4 text-center bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
+                <h1 className="text-xs font-bold font-Ovo mb-4 text-center bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Training & Professional Development
                 </h1>
                 <p className="text-center text-xs text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
@@ -135,7 +135,7 @@ export default function TrainingPage() {
 
                 {/* Courses Section */}
                 <div className="max-w-5xl mx-auto mt-20">
-                    <h2 className="text-lg font-bold font-Ovo mb-8 text-center bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
+                    <h2 className="text-xs font-bold font-Ovo mb-8 text-center bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
                         Professional Development Courses
                     </h2>
                     <div className="space-y-8">

@@ -19,7 +19,7 @@ export default function VulgarisationPage() {
             <Navbar />
             
             <div className="w-full px-[12%] py-20 mt-16">
-                <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Scientific Vulgarisation</h1>
+                <h1 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white mb-6">Scientific Vulgarisation</h1>
                 <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Public engagement and science communication work on quantum mechanics and scientific misinformation.
                 </p>

@@ -42,7 +42,7 @@ export default function ConferencesPage() {
             <Navbar />
             
             <div className="w-full px-[12%] py-20 mt-16">
-                <h1 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white mb-6">Conferences & Invited Talks</h1>
+                <h1 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white mb-6">Conferences & Invited Talks</h1>
                 <p className="text-xs text-gray-700 dark:text-gray-300 mb-12 max-w-3xl">
                     Conference presentations and invited seminars on quantum foundations, measurement theory, and relational quantum mechanics.
                 </p>
@@ -67,7 +67,7 @@ export default function ConferencesPage() {
                                         <span className="text-gray-600 dark:text-gray-400">{conf.date}</span>
                                     </div>
                                     <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{conf.title}</h3>
-                                    <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">{conf.event}</p>
+                                    <p className="text-xs font-medium text-gray-700 dark:text-gray-300 mb-4">{conf.event}</p>
                                     <p className="text-xs text-gray-700 dark:text-gray-300 leading-normal">{conf.description}</p>
                                     {conf.slides && (
                                         <div className="mt-4">

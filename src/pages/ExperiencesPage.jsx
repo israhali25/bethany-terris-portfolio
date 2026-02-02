@@ -62,14 +62,14 @@ export default function ExperiencesPage() {
             
             {/* Header Section */}
             <div className="w-full px-[12%] py-32 pt-40">
-                <Link to="/" className="inline-flex items-center gap-2 text-lg mb-8 text-gray-600 dark:text-gray-300 hover:text-[#b820e6] transition-colors">
+                <Link to="/" className="inline-flex items-center gap-2 text-xs mb-8 text-gray-600 dark:text-gray-300 hover:text-[#b820e6] transition-colors">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                     Back to Home
                 </Link>
                 
-                <h1 className="text-5xl md:text-6xl font-bold font-Ovo mb-6 bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
+                <h1 className="text-xs md:text-xs font-bold font-Ovo mb-6 bg-gradient-to-r from-[#b820e6] via-[#da7d20] to-[#e94560] bg-clip-text text-transparent">
                     Communication & Outreach
                 </h1>
                 <p className="text-xs text-gray-600 dark:text-gray-300 max-w-3xl">
@@ -85,7 +85,7 @@ export default function ExperiencesPage() {
                         <div key={index} className="group border-2 border-gray-200 dark:border-white/20 rounded-2xl p-8 md:p-10 hover:border-[#b820e6] dark:hover:border-[#b820e6] transition-all duration-300 hover:shadow-2xl bg-white dark:bg-darkHover/30">
                             {/* Header */}
                             <div className="flex items-start gap-6 mb-6">
-                                <div className="text-5xl">{exp.icon}</div>
+                                <div className="text-3xl">{exp.icon}</div>
                                 <div className="flex-1">
                                     <div className="flex flex-wrap items-center gap-3 mb-2">
                                         <h2 className="text-sm md:text-base font-bold text-gray-800 dark:text-white">
@@ -95,7 +95,7 @@ export default function ExperiencesPage() {
                                             {exp.year}
                                         </span>
                                     </div>
-                                    <p className="text-lg text-[#b820e6] dark:text-[#da7d20] font-medium mb-4">
+                                    <p className="text-xs text-[#b820e6] dark:text-[#da7d20] font-medium mb-4">
                                         {exp.type}
                                     </p>
                                 </div>

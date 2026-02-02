@@ -34,7 +34,7 @@ export default function Services() {
                             <span className="text-white text-sm font-bold">{index + 1}</span>
                         </div>
                         <h3 className="text-sm font-semibold mb-3 text-gray-800 dark:text-white">{service.name}</h3>
-                        <p className="text-lg text-gray-600 leading-normal dark:text-gray-300">{service.description}</p>
+                        <p className="text-xs text-gray-600 leading-normal dark:text-gray-300">{service.description}</p>
                     </div>
                 ))}
             </div>

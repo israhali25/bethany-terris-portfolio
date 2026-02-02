@@ -46,7 +46,7 @@ export default function Skills() {
         <div id="skills" className="w-full px-[12%] py-20 scroll-mt-20">
             <div className="text-center mb-16">
                 <h4 className="mb-3 text-xs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Expertise</h4>
-                <h2 className="text-5xl font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
+                <h2 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white">Skills</h2>
                 <p className="text-xs text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
                     Interdisciplinary training bridging philosophy, physics, and science communication
                 </p>
@@ -65,7 +65,7 @@ export default function Skills() {
                             {category.skills.map((skill, skillIndex) => (
                                 <li 
                                     key={skillIndex}
-                                    className="flex items-start gap-3 text-lg text-gray-700 dark:text-gray-300"
+                                    className="flex items-start gap-3 text-xs text-gray-700 dark:text-gray-300"
                                 >
                                     <span className="text-[#b820e6] mt-1 flex-shrink-0">•</span>
                                     <span>{skill}</span>

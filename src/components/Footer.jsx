@@ -9,7 +9,7 @@ export default function Footer() {
                     <span className="text-sm font-bold font-Ovo dark:text-white">Bethany Terris, Ph.D.</span>
                 </a>
 
-                <div className="w-max flex items-center gap-2 mx-auto text-lg">
+                <div className="w-max flex items-center gap-2 mx-auto text-xs">
                     <img src="./assets/mail_icon.png" alt="" className="w-6 dark:hidden" />
                     <img src="./assets/mail_icon_dark.png" alt="" className="w-6 hidden dark:block" />
 
