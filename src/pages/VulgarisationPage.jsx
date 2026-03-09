@@ -8,8 +8,8 @@ export default function VulgarisationPage() {
             role: 'Invited Guest',
             date: 'December 2025',
             hosts: 'Michelle Awad and Mélissa-Ann Thomas',
-            link: 'https://webtv.centralesupelec.fr/videos/recording_bethanyfinal/',
-            linkText: 'Episode',
+            link: 'https://awc.centralesupelec.fr/en/podcast',
+            linkText: 'Find the episode here',
             description: "In this episode of the Academic Writing Podcast, I discuss how science misinformation emerges and circulates within the contemporary quantum ecosystem, from hype-driven narratives to more insidious ideological pipelines, including links to right-wing and conspiratorial communities. Drawing on my experience in quantum foundations and science communication, I explore why misinformation thrives when expertise is framed as elitist or exclusionary. We argue that effective remedies lie not in shaming or performative debunking, but in responsible communication that treats audiences with intellectual respect, encouraging curiosity, openness, and critical engagement without sacrificing rigor."
         }
     ];
