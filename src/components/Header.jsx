@@ -26,7 +26,7 @@ export default function Header() {
 
             <div className="max-w-xl space-y-2">
                 <p className="text-xs font-Ovo text-gray-700 dark:text-gray-300 leading-normal">
-                    Interdisciplinary researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span> translating theory and experiment into clear, responsible science communication.
+                    Interdisciplinary researcher in <span className="font-semibold text-[#b820e6]">quantum foundations</span> focused on translating theory and experiment into responsible science communication and clear strategy.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-gray-600 dark:text-gray-400">
                     <span className="flex items-center gap-1.5">
