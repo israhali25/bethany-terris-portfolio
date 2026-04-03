@@ -45,7 +45,7 @@ export default function Header() {
                     </svg>
                 </button>
 
-                <a href="./assets/cv_bterris.pdf" download
+                <a href="/assets/cv_bterris.pdf" download
                     className="px-3 py-1 text-xxs rounded-full border-2 border-gray-300 dark:border-white/30 hover:border-[#b820e6] dark:hover:border-[#b820e6] flex items-center gap-1.5 bg-white dark:bg-transparent dark:text-white font-medium hover:shadow-xl transition-all duration-300">
                     Download CV
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
