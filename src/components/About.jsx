@@ -4,7 +4,6 @@ export default function About() {
             <div className="text-center mb-4">
                 <h4 className="mb-1 text-xs font-Ovo text-gray-700 dark:text-gray-300 uppercase tracking-wider">Introduction</h4>
                 <h2 className="text-xs font-Ovo font-bold text-gray-900 dark:text-white">Who Am I?</h2>
-                <p className="text-xxs text-gray-700 dark:text-gray-300 mt-1 italic">The question we all ask ourselves</p>
             </div>
 
             <div className="flex w-full flex-col lg:flex-row items-start gap-4 max-w-5xl mx-auto">
@@ -54,10 +53,6 @@ export default function About() {
 
                     <p className="font-bold text-xxs">
                         This is where my interest in science communication comes in. I care about how quantum ideas travel. What gets simplified. What gets distorted. And how vague references to "quantum" are used to sell certainty, authority, or even ideology, without understanding the science underneath.
-                    </p>
-
-                    <p className="font-bold text-xxs">
-                        I'm interested in quantum technology not just as a scientific achievement, but as a social one. What we build matters. So does how we talk about it. And if we don't take responsibility for that conversation, someone else will – badly.
                     </p>
 
                     <div className="mt-6 pt-3 border-t-2 border-gray-200 dark:border-gray-700">
